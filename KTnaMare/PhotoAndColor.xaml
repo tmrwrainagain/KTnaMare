@@ -1,0 +1,53 @@
+﻿<Window x:Class="KTnaMare.PhotoAndColor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KTnaMare"
+        mc:Ignorable="d"
+        Title="Foto" Height="450" Width="800">
+    <Grid Name="gridchange">
+        <RadioButton Name="First" Content="Первая" FontSize="25" HorizontalAlignment="Left" Height="37" Margin="-27,68,0,0" VerticalAlignment="Top" Width="165" Checked="RadioButton_Checked" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-92.344"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton Name="Second" Content="Вторая" FontSize="25" HorizontalAlignment="Left" Height="37" Margin="81,85,0,0" VerticalAlignment="Top" Width="165" Checked="Second_Checked" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="40.824"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton Name="Third" Content="Третя" FontSize="25" HorizontalAlignment="Left" Height="36" Margin="69,141,0,0" VerticalAlignment="Top" Width="165" Checked="Third_Checked" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-28.983"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <Button Content="Измени цвет бесплатно" FontSize="25" HorizontalAlignment="Left" Height="59" Margin="289,331,0,0" VerticalAlignment="Top" Width="296" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-1.223"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+        <Image Name="DisplayImage" HorizontalAlignment="Left" Height="238" Margin="375,53,0,0" VerticalAlignment="Top" Width="321"/>
+    </Grid>
+</Window>
